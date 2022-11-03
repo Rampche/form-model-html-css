@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Survey Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-banner">
+      <h1 id="title">Tech Survey Project</h1>
+      <p id="description">
+        <em> Fill in the form with the requested information</em>
+      </p>
+      <p id="description">
+        <em>Thank you for taking the time to test my form</em>
+      </p>
+    </div>
+
+    <div class="container">
+      <form method="get" id="survey-form" autocomplete="off">
+        <div class="name">
+          <div class="name-label">
+            <label for="name" id="name-label">Name</label>
+          </div>
+          <div class="name-input">
+            <input
+              type="text"
+              name="Name"
+              id="name"
+              placeholder="Enter your name"
+              size="50"
+              required
+            />
+          </div>
+        </div>
+        <div class="email">
+          <div class="email-label">
+            <label for="email" id="email-label">Email</label>
+          </div>
+          <div class="email-input">
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Enter your Email"
+              size="50"
+              required
+            />
+          </div>
+        </div>
+        <div class="age">
+          <div class="age-label">
+            <label for="number" id="number-label">Age (optional)</label>
+          </div>
+          <div class="age-input">
+            <input
+              type="number"
+              name="age"
+              id="number"
+              placeholder="Enter your age"
+              min="10"
+              max="80"
+              size="50"
+            />
+          </div>
+        </div>
+        <div class="current-role">
+          <label for="current_role"
+            >Which option best describes your current role?</label
+          >
+          <select name="role" id="dropdown">
+            <option value="false">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full time job</option>
+            <option value="full-time-learner">Full time learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="recommend">
+          <label for="recomendate"
+            >What type of career would you like to follow?</label
+          >
+          <label for="front-end">
+            <input
+              type="radio"
+              id="definitely"
+              name="radio"
+              value="front-end"
+            />
+            Front-End</label
+          >
+          <label for="back-end">
+            <input type="radio" id="back-end" name="radio" value="back-end" />
+            Back-End</label
+          >
+          <label for="full-stack">
+            <input
+              type="radio"
+              id="full-stack"
+              name="radio"
+              value="full-stack"
+            />
+            Full-Stack</label
+          >
+          <label for="other">
+            <input type="radio" id="other" name="radio" value="other" />
+            Other</label
+          >
+        </div>
+        <div class="favorite-country">
+          <label for="fav-feature"
+            >In wich of these countries would you look for a job?</label
+          >
+          <select name="fav-country" id="fav-country">
+            <option value="false">Select an option</option>
+            <option value="united-states">United States</option>
+            <option value="netherlands">Netherlands</option>
+            <option value="portugal">Portugal</option>
+            <option value="england">England</option>
+            <option value="brazil">Brazil</option>
+          </select>
+        </div>
+        <div class="improvement">
+          <label for="items-to-improve"
+            >What back-end languages would you like to learn?
+            <small>(Check all that apply)</small></label
+          >
+
+          <label for="python">
+            <input
+              type="checkbox"
+              name="front-end-projects"
+              id="python"
+              value="python"
+            />
+            Python</label
+          >
+          <label for="java">
+            <input type="checkbox" name="java" id="java" value="java" />
+            Java</label
+          >
+          <label for="nodejs">
+            <input type="checkbox" value="nodejs" id="nodejs" value="node" />
+            Node.js</label
+          >
+          <label for="ruby">
+            <input type="checkbox" value="ruby" id="ruby" value="ruby" />
+            Ruby</label
+          >
+        </div>
+        <div class="sugestions">
+          <div class="sugestions-label">
+            <label for="sugestions" id="sugestions"
+              >Share with us your thoughts and sugestions
+            </label>
+          </div>
+          <div class="sugestions-txt-area">
+            <textarea
+              name="sugestions"
+              id="sugestions"
+              cols="30"
+              rows="10"
+              placeholder="Enter your comments here."
+            ></textarea>
+          </div>
+        </div>
+        <div class="submit"></div>
+        <button class="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
